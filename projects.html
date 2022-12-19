@@ -23,10 +23,17 @@
             background-color: #04AA6D;
             color: white;
     }
+    .expand{
+     display: flex;
+      flex-direction: columm;
+    }
+    .expand:not(.selected){
+     display: none; 
+    }
     </style>
   </head>
   <body>
-    <h1></h1>
+    
    <div class="topbar">
     <a href="/">Home</a>
     <a href="/projects">Projects</a>
@@ -36,5 +43,18 @@
     <a href="/mathprogram">Math Program</a>
     <a href="/codingprogram">Coding Program</a>
     </div>
+    <div class="expand">
+      <div>
+        DylanKimissocute!!
+      </div>
+      <div>
+        boo
+      </div>
+    </div>
+    <script>
+      document.querySelectorAll(".expand").forEach((element) => {
+        console.log(element);
+      });
+    </script>
   </body>
 </html>

@@ -8,14 +8,15 @@
         body{
          margin: 0;   
         }
-        body {
-             background-image: url("assets/dog.jpg");
- background-color: #cccccc;
-             height: 500px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-}
+        .header-area {
+            background-image: url("assets/dog.jpg");
+            background-color: #cccccc;
+            width: 100%;
+            height: 500px; /* You must set a specified height */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover; /* Resize the background image to cover the entire container */
+        }
         .topbar{
             background-color: #265A9C;
             overflow: hidden;
@@ -49,20 +50,25 @@
 </head>
 <body>
     <div class="topbar">
-    <a href="/">Home</a>
-    <a href="/projects">Projects</a>
-    <a href="/contacts">Contacts</a>
-  
+        <a href="/">Home</a>
+        <a href="/projects">Projects</a>
+        <a href="/contacts">Contacts</a>
+    </div>
+    <div class="header-area">
+        <h1>Header text...</h1>
+        <p>Header para....</p>
     </div>
     <section class="w3-container w3-center" style="max-width:600px">
-  <h2 class="w3-wide">About our team</h2>
-  <p class="w3-opacity"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i></p>
-</section>
+        <h2 class="w3-wide">About our team</h2>
+        <p class="w3-opacity">
+            <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i>
+        </p>
+    </section>
     <section class="w3-container w3-content w3-center" style="max-width:600px">
-<p class="w3-justify">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</section>
-
+        <p class="w3-justify">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </section>
 </body>
      
 </html>

@@ -1,0 +1,200 @@
+<html>
+  <head>
+    <link rel="icon" href=logo.jpg>
+    <title>Advance Coding Club</title>
+    <style>
+      body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
+
+header {
+  background-color: #3d5a80 ;
+  color: white;
+  padding: 20px;
+  display: flex;
+  
+  justify-content: cetner;
+}
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+header img {
+  height: 40px;
+  margin-right: 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3d5a80;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+nav a:hover {
+  background-color: #98c1d9;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* this centers the cards horizontally */
+  padding: 20px;
+}
+main div {
+  width: 80%;
+  margin: 10px;
+
+}
+main div h2 {
+  color: #333;
+  font-size: 18px;
+  margin: 0;
+}
+main div p {
+  color: #555;
+  font-size: 14px;
+  margin: 10px 0;
+}
+footer {
+  background-color: #3d5a80;
+  color: white;
+  padding: 20px;
+}
+footer p {
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+}
+.card {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+}
+
+.card-content {
+  padding: 20px;
+}
+.card-content h3 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+}
+.card-content p {
+  color: #555;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.card-action {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+}
+.card-action a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+}
+.card-action a:hover {
+  color: #555;
+}
+.expanded{
+   padding: 10px;
+}
+:not(.selected) > .expanded {
+    display: none;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Advance Academy Coding Club</h1>
+    </header>
+    <nav>
+      <a href="file:///C:/Users/Willy/Documents/Desktop2/AdvanceCSCLUB/index.html">
+        <img src="logo.jpg" alt="icon" height="40px">
+        Advance Academy
+      </a>
+      <a href="file:///C:/Users/Willy/Documents/Desktop2/AdvanceCSCLUB/Events.html">Events</a>
+      <a href="file:///C:/Users/Willy/Documents/Desktop2/AdvanceCSCLUB/Projects.html">Projects</a>
+      <a href="file:///C:/Users/Willy/Documents/Desktop2/AdvanceCSCLUB/About.html">About</a>
+    </nav>
+    <main>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200.png?text=Event+1" alt="Event 1">
+        <div class="card-content" id="Events">
+          <h3>Event 1: Annual Advance Academy Project Showcase</h3>
+          <p>Every year Advance Academy hosts a cometition for students to showcase their progress, a Panel of judges will evaluate each team's(maximum of two members) demonstration and rank them from bronze to gold based on their quality, with respect to the student's own capabilites</p>
+        </div>
+        <div class="card-action">
+          <a class="expander" href="#">Learn More</a>
+        </div>
+        <div class="expanded">
+            <h2>Rewards</h2>
+            <h4>The prizes for each tier are:</h4>
+            <p>     Tier 3(Bronze): Prize budget of 25$ for each member</p>
+            <p>     Tier 2(Silver): Prize budget of 50$ for each member</p>
+            <p>     Tier 1(Gold): Prize budget of 100$ for each member</p>
+            <p>The projects will be judged by a panel of 3 judges (Mr. Lee, Eric Bae, and Richard Durbin). There is no limit to winners of each Tier, so if every project is on a gold level, everyone will recive the maximum reward</p>
+            <h2>When</h2>
+            <p>You will have from December 16th to Janurary 13th to develop your projects, you are able to finish mostly unfinished projects(can not be almost complete)</p>
+            <h2>Presentation</h2>
+            <p>At the end of the 4 week period, each project will be presented by the creators and then evaluated by the judges. The expectation is that it relates to coding and utilizes the cumulation of all your skills and experience. At the halfway mark there will be a "review" period where peers will share their projects and recive new strategies and ideas for inspiration.</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200.png?text=Event+2" alt="Event 2">
+        <div class="card-content">
+          <h3>Event 2: Coding Workshop</h3>
+          <p>Learn the basics of coding in this workshop. We will cover basic concepts of programming and walk you through building a simple project. No prior experience is required. Register now to reserve your spot.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200.png?text=Event+3" alt="Event 3">
+        <div class="card-content">
+          <h3>Event 3: Hackathon</h3>
+          <p>Join us for a full day of coding and collaboration as we work together to create new and exciting projects. Prizes will be awarded for the best projects.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+      
+      
+    </main>
+    <footer>
+      <p>Advance Academy Coding Club &copy;2023</p>
+    </footer>
+    <script>
+        document.querySelectorAll('.expander').forEach(el => {
+            el.addEventListener('click', () => {
+                let parent = el.parentNode.parentNode;
+                if(parent.classList.contains('selected')){
+                    parent.classList.remove('selected');
+                }
+                else{
+                parent.classList.add('selected');
+                }
+            });
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href=logo.jpg>
+    <title>About Advance</title>
+</head>
+<style>
+    body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
+    header {
+  background-color: #3d5a80 ;
+  color: white;
+  padding: 20px;
+  display: flex;
+  
+  justify-content: cetner;
+}
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+header img {
+  height: 40px;
+  margin-right: 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3d5a80;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+nav a:hover {
+  background-color: #98c1d9;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* this centers the cards horizontally */
+  padding: 20px;
+  
+}
+main div {
+  width: 80%;
+  margin: 10px;
+
+}
+main div h2 {
+  color: #333;
+  font-size: 18px;
+  margin: 0;
+}
+main div p {
+  color: #555;
+  font-size: 14px;
+  margin: 10px 0;
+}
+footer {
+  background-color: #3d5a80;
+  color: white;
+  padding: 20px;
+}
+footer p {
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+}
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 32.4%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 30%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+/* About section */
+.about {
+    padding: 50px;
+    background-color: #f2f2f2;
+}
+
+/* Mission section */
+.mission {
+    padding: 50px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+/* Team section */
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+</style>
+<body>
+    <header>
+        <h1>Advance Academy Coding Club</h1>
+      </header>
+      <nav>
+        <a href="file:///C:/Users/Willy/Documents/Desktop2/AdvanceCSCLUB/index.html">
+          <img src="logo.jpg" alt="icon" height="40px">
+          Advance Academy
+        </a>
+        <a href="file:///C:/Users/Willy/Documents/Desktop2/AdvanceCSCLUB/Events.html">Events</a>
+        <a href="file:///C:/Users/Willy/Documents/Desktop2/AdvanceCSCLUB/Projects.html">Projects</a>
+        <a href="file:///C:/Users/Willy/Documents/Desktop2/AdvanceCSCLUB/About.html">About</a>
+      </nav>
+      <section id="about">
+        <h2>About Us</h2>
+        <p>Advance Academy Coding Club is a student-led organization dedicated to promoting computer science education and providing opportunities for students to explore and develop their coding skills. We host events, workshops, and hackathons throughout the year, and work on various projects to improve our skills and contribute to the community.</p>
+      </section>
+      <section id="mission">
+        <h2>Our Mission</h2>
+        <p>Our mission is to inspire and empower students to become active participants in the digital world by providing opportunities to learn and create with technology. We strive to create an inclusive and supportive environment for all students to explore their interests and develop their skills in computer science.</p>
+      </section>
+      <section id="team">
+        <h2>Our Team:</h2>
+      </section>
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="williamdurbin.jpg" alt="Jane" style="width:33%">
+            <div class="container">
+              <h2>William Durbin</h2>
+              <p class="title">Club Member &amp; Creator of club website</p>
+              <p>I am wi ly.</p>
+              <p>willydurbin52@gmail.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="josephjackson.jpg" alt="Mike" style="width:33%">
+            <div class="container">
+              <h2>Joseph Jackson</h2>
+              <p class="title">Club Member</p>
+              <p>I is josep</p>
+              <p>example@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+            <div class="card">
+              <img src="anthonyaoude.jpg" alt="Mike" style="width:33%">
+              <div class="container">
+                <h2>Anthony Aoude</h2>
+                <p class="title">Club Member</p>
+                <p>I is Ant</p>
+                <p>example@example.com</p>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <img src="richardurbin.jpg" alt="Mike" style="width:33%">
+              <div class="container">
+                <h2>Richard Durbin</h2>
+                <p class="title">Club Member</p>
+                <p>I is rich</p>
+                <p>example@example.com</p>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <img src="brandonyoon.jpg" alt="Mike" style="width:33%">
+              <div class="container">
+                <h2>Brandon Yoon</h2>
+                <p class="title">Club Member</p>
+                <p>I is bran</p>
+                <p>example@example.com</p>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="column">
+            <div class="card">
+              <img src="dylankim.jpg" alt="Mike" style="width:33%">
+              <div class="container">
+                <h2>Dylan Kim</h2>
+                <p class="title">Club Member</p>
+                <p>I is dy lan</p>
+                <p>example@example.com</p>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <img src="thomasdurbin.jpg" alt="Mike" style="width:33%">
+              <div class="container">
+                <h2>Thomas Durbin</h2>
+                <p class="title">Club Member</p>
+                <p>I is tom lan</p>
+                <p>example@example.com</p>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+          </div>
+      </div>
+      <footer>
+        <p>Advance Academy Coding Club &copy;2023</p>
+      </footer>
+</body>
+</html>

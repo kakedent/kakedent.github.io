@@ -1,0 +1,198 @@
+<html>
+  <head>
+    <link rel="icon" href=logo.jpg>
+    <title>Coding Club</title>
+    <style>
+      body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
+
+header {
+  background-color: #3d5a80 ;
+  color: white;
+  padding: 20px;
+  display: flex;
+  
+  justify-content: cetner;
+}
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+header img {
+  height: 40px;
+  margin-right: 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3d5a80;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+nav a:hover {
+  background-color: #98c1d9;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* this centers the cards horizontally */
+  padding: 20px;
+}
+main div {
+  width: 80%;
+  margin: 10px;
+
+}
+main div h2 {
+  color: #333;
+  font-size: 18px;
+  margin: 0;
+}
+main div p {
+  color: #555;
+  font-size: 14px;
+  margin: 10px 0;
+}
+footer {
+  background-color: #3d5a80;
+  color: white;
+  padding: 20px;
+}
+footer p {
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+}
+.card {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+}
+
+.card-content {
+  padding: 20px;
+}
+.card-content h3 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+}
+.card-content p {
+  color: #555;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.card-action {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+}
+.card-action a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+}
+.card-action a:hover {
+  color: #555;
+}
+.expanded{
+   padding: 10px;
+}
+:not(.selected) > .expanded {
+    display: none;
+}
+.hero {
+        height: 300px;
+        background-image: url("https://via.placeholder.com/1920x300.png?text=Hero+Image");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      .hero h2 {
+        font-size: 36px;
+        margin: 0;
+      }
+      .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px 0;
+      }
+      .card-container .card {
+        width: 30%;
+        margin: 20px;
+      }
+      .card-container .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Advance Academy Coding Club</h1>
+    </header>
+    <nav>
+      <a href="file:///C:/Users/Willy/Documents/Desktop2/AdvanceCSCLUB/index.html">
+        <img src="logo.jpg" alt="icon" height="40px">
+        Advance Academy
+      </a>
+      <a href="file:///C:/Users/Willy/Documents/Desktop2/AdvanceCSCLUB/Events.html">Events</a>
+      <a href="file:///C:/Users/Willy/Documents/Desktop2/AdvanceCSCLUB/Projects.html">Projects</a>
+      <a href="file:///C:/Users/Willy/Documents/Desktop2/AdvanceCSCLUB/About.html">About</a>
+    </nav>
+    <div class="hero">
+      <h2>Welcome to Advance Academy Coding Club</h2>
+    </div>
+    <main>
+      <p>We are a group of students dedicated to learning and exploring the world of coding. We host events and competitions throughout the year to showcase our progress and skills. Check out our upcoming events and past projects below.</p>
+      <div class="card-container">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200.png?text=Event+1" alt="Event 1">
+          <div class="card-content">
+            <h3>Event 1: Annual Advance Academy Project Showcase</h3>
+            <p>Every year Advance Academy hosts a cometition for students to showcase their progress, a Panel of judges will evaluate each team's(maximum of two members) demonstration and rank them from bronze to gold based on their quality, with...
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200.png?text=Event+2" alt="Event 2">
+          <div class="card-content">
+            <h3>Event 2: Coding Workshop</h3>
+            <p>Learn the basics of coding in this workshop. We will cover basic concepts of programming and walk you through building a simple project. No prior experience is required. Register now to reserve your spot.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200.png?text=Project+1" alt="Project 1">
+          <div class="card-content">
+            <h3>Project 1: Weather App</h3>
+            <p>A simple web app that displays current weather conditions for a user-specified location. Built using HTML, CSS, and JavaScript.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Advance Academy Coding Club &copy;2023</p>
+    </footer>
+  </body>
+</html>
